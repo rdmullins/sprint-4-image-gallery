@@ -1,5 +1,12 @@
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
+const photos = [
+    "/img/pic1.jpg",
+    "/img/pic2.jpg",
+    "/img/pic3.jpg",
+    "/img/pic4.jpg",
+    "/img/pic5.jpg"    
+];
 
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
