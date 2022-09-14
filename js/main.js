@@ -23,7 +23,7 @@ for (let i=0; i<photos.length; i++) {
     // newImage.setAttribute('alt', xxx);
     thumbBar.appendChild(newImage);
     newImage.addEventListener("click", e => displayedImage.src = e.target.src);
-
+};
 /* Wiring up the Darken/Lighten button */
 
 btn.addEventListener("click", () => {
@@ -37,4 +37,4 @@ btn.addEventListener("click", () => {
         btn.textContent = "Darken";
         overlay.style.backgroundColor = "rgba(o,0,0,0)";
     }
-})
+});
