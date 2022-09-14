@@ -22,5 +22,7 @@ for (let i=0; i<photos.length; i++) {
     newImage.setAttribute('src', photos[i]);
     // newImage.setAttribute('alt', xxx);
     thumbBar.appendChild(newImage);
+    newImage.addEventListener("click", e => displayedImage.src = e.target.src);
 
 /* Wiring up the Darken/Lighten button */
+
