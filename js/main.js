@@ -13,6 +13,14 @@ const photos = [
     "/img/pic5.jpg"    
 ];
 
+const altText = [
+    "Closeup of a human eye",
+    "Swirly rock formation",
+    "Purple and white flowers",
+    "Ancient Egyptian artwork",
+    "Butterfly"
+];
+
 /* Declaring the alternative text for each image file */
 
 /* Looping through images */
@@ -20,6 +28,7 @@ const photos = [
 for (let i=0; i<photos.length; i++) {
     const newImage = document.createElement('img');
     newImage.setAttribute('src', photos[i]);
+    newImage.setAttribute('alt', altText[i]);
     // newImage.setAttribute('alt', xxx);
     thumbBar.appendChild(newImage);
     newImage.addEventListener("click", e => displayedImage.src = e.target.src);
@@ -31,10 +40,10 @@ btn.addEventListener("click", () => {
     if (currentStatus === "dark") {
         btn.setAttribute("class", "light");
         btn.textContent = "Lighten";
-        overlay.style.backgroundColor = "rgba(o,0,0,0.5)";
+        overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
     } else {
         btn.setAttribute("class", "dark");
         btn.textContent = "Darken";
-        overlay.style.backgroundColor = "rgba(o,0,0,0)";
+        overlay.style.backgroundColor = "rgba(0,0,0,0)";
     }
 });
